@@ -48,8 +48,7 @@ public class navigationServlet extends HttpServlet {
 				System.out.println("Forgot to select a sighting");
 				}			
 		} else if (act.equals("edit")) {
-			try {
-				
+			try {			
 			
 			Integer tempId = Integer.parseInt(request.getParameter("id"));
 			Sighting sightingToEdit = dao.searchForSightingById(tempId);
